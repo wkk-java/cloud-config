@@ -1,0 +1,8 @@
+application:
+    auth: james
+    version: v1
+    name: application
+
+redis:
+    ip: os1
+    

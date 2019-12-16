@@ -1,0 +1,3 @@
+application:
+    default_user: test
+    default_pwd: test
