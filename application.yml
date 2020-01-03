@@ -1,8 +1,6 @@
 application:
-    auth: james
-    version: v1
-    name: application
-
-redis:
-    ip: os1
-    
+  author:
+    name: james kkk
+    address: ShangHai
+    email: 103xxxxx@qq.com
+  date: 2019/07

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zuul
+    author: wkk
+
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
