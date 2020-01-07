@@ -1,4 +1,4 @@
 spring:
   application:
-    name: oauth2-server2
+    name: oauth2-server
     author: wkk
