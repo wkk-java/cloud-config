@@ -4,3 +4,7 @@ application:
     address: ShangHai city
     email: 103xxxxx@qq.com
   date: 2019/07
+
+spring:
+  eureka_server_hostname: jr-server
+  eureka_server_list: http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}/eureka/
