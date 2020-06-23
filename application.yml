@@ -7,4 +7,4 @@ application:
 
 spring:
   eureka_server_hostname: jr-server
-  eureka_server_list: http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka_server_hostname}/eureka/
+  eureka_server_list: http://admin:admin123@${eureka_server_hostname}:2001/eureka/,http://admin:admin123@${eureka_server_hostname}:2002/eureka/,http://admin:admin123@${eureka_server_hostname}/eureka/
