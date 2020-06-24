@@ -11,7 +11,7 @@ spring:
 ---
 spring:
   redis:
-    host: localhost
+    host: wk-server
     database: 0
 ...
 # 开启Feign对Hystrix的支持
