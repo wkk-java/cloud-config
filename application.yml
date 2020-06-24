@@ -6,14 +6,12 @@ application:
   date: 2019/07
 
 spring:
-  eureka_server_hostname: jr-server
-  eureka_server_list: http://admin:admin123@${spring.eureka_server_hostname}:2001/eureka/,http://admin:admin123@${spring.eureka_server_hostname}:2002/eureka/,http://admin:admin123@${spring.eureka_server_hostname}/eureka/
----
-spring:
   redis:
     host: wk-server
     database: 0
-...
+  eureka_server_hostname: jr-server
+  eureka_server_list: http://admin:admin123@${spring.eureka_server_hostname}:2001/eureka/,http://admin:admin123@${spring.eureka_server_hostname}:2002/eureka/,http://admin:admin123@${spring.eureka_server_hostname}/eureka/
+
 # 开启Feign对Hystrix的支持
 feign:
   hystrix:
