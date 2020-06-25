@@ -3,7 +3,7 @@ application:
     names: james yoyo
     address: ShangHai city
     email: 103xxxxx@qq.com
-	date: 2019/07
+  date: 2019/07
 spring:
   redis:
     host: wk-server
