@@ -8,6 +8,7 @@ application:
 spring:
   redis:
     host: wk-server
+    password: ${SECURITY_USER_PASSWORD}
     database: 0
   eureka_server_hostname: jr-server
   eureka_server: http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}/eureka/
