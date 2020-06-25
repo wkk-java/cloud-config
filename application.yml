@@ -6,7 +6,7 @@ application:
   date: 2019/07
 spring:
   redis:
-    host: 106.14.202.235
+    host: ${reidsserver:wk-server}
     #没有密码可以用~表示
     password: ${SECURITY_USER_PASSWORD}
     database: 0
@@ -21,8 +21,7 @@ spring:
         max-wait: -1s
         # 最大活跃连接数，负数为不限制
         max-active: -1
-  eureka_server_hostname: jr-server
-  eureka_server: http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${spring.eureka_server_hostname}/eureka/
+  eureka_server: http://admin:${SECURITY_USER_PASSWORD}@${eureka1}:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka2}:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@${eureka3}/eureka/
 security:
   user:
     name: admin
