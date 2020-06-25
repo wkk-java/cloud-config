@@ -6,7 +6,7 @@ application:
   date: 2019/07
 spring:
   redis:
-    host: ${reidsserver:wk-server}
+    host: ${redisserver:wk-server}
     #没有密码可以用~表示
     password: ${SECURITY_USER_PASSWORD}
     database: 0
