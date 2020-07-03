@@ -6,7 +6,7 @@ spring:
     url: jdbc:mysql://${mysqlserver:jr-server}:3306/sys?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai
 mybatis:
   # 指定实体类包路径	
-  typeAliasesPackage: com.wk.**.model
+  typeAliasesPackage: com.wk.*.model
   config-location: classpath:mybatis-config.xml
   # 指定xml文件扫描路径 
   mapper-locations: lasspath*:mapper/**/*.xml
