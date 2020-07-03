@@ -5,7 +5,11 @@ spring:
     password: root
     url: jdbc:mysql://${mysqlserver:jr-server}:3306/sys?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai
 mybatis:
-# 指定实体类包路径	
+  # 指定实体类包路径	
   typeAliasesPackage: com.wk.*.*.model
-# 指定xml文件扫描路径 
-  mapper-locations: classpath*:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  # 指定xml文件扫描路径 
+  mapper-locations: lasspath*:com/wk/**/mapper/**/*.xml
+  configuration:
+    #进行自动映射时，数据以下划线命名，如数据库返回的"order_address"命名字段是否映射为class的"orderAddress"字段。默认为false
+    map-underscore-to-camel-case: true
