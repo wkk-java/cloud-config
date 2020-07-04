@@ -28,11 +28,33 @@ spring:
     password: guest
   jpa:
     show-sql: true
-eureka_server: http://admin:${SECURITY_USER_PASSWORD}@wk-server:2001/eureka/,http://admin:${SECURITY_USER_PASSWORD}@jr-server:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@lj-server:2003/eureka/
+
 security:
   user:
     name: admin
     password: ${SECURITY_USER_PASSWORD}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+logging.level.org.springframework.security: info
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true #跨域访问
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${eureka_server:http://admin:${SECURITY_USER_PASSWORD}@jr-server:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@lj-server:2003/eureka/}
+
+
 # 开启Feign对Hystrix的支持
 feign:
   hystrix:
