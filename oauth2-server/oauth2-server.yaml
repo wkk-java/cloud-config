@@ -12,7 +12,14 @@ spring:
                         client-id: test
                         client-secret: {bcrypt}$2a$10$tMSDLeQjFehV8Z1BxoU3quISNyLXXMDI8pdA3RKdwqv1ujuZ6AAQG
                         scope: select
-                        authorization-grant-type: password,refresh_token,client_credentials,mobile,authorization_code
+                        authorization-grant-type: password,refresh_token,client_credentials,authorization_code
+                        accessTokenValiditySeconds: 600
+                        refreshTokenValiditySeconds: 600
+                    dev:
+                        client-id: dev
+                        client-secret:
+                        scope: select
+                        authorization-grant-type: client_credentials
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
 ...
