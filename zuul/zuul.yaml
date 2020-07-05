@@ -2,10 +2,24 @@ spring:
   application:
     name: zuul
     author: wkk
+---
+zuul:
+    # 过滤service服务
+    #ignoredServices: '*-server-*'
+    ignoredPatterns:
+        /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
+    routes:
+        path: /${URL_SERVER_NAME}/sys/**
+        sensitiveHeaders:
+        serviceId: sys
+        stripPrefix: true
 
+...
+---
 zuul:
   sensitive-headers: Cookie,Set-Cookie
   upload:
     multipart:
       max-file-size: 100MB #设置文件最大数据大小
       max-request-size: 100MB #设置总上传数据大小
+...
