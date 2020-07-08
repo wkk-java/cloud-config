@@ -23,3 +23,5 @@ spring:
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
 ...
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
