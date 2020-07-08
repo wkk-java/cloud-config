@@ -1,9 +1,6 @@
+
 spring:
-  application:
-    name: oauth2
-    author: wkk
----
-spring:
+    name: oauth2-server
     security:
         oauth2:
             client:
@@ -22,7 +19,7 @@ spring:
                         authorization-grant-type: client_credentials
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
-...
+
 
 hystrix:
   command:
