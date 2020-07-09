@@ -14,7 +14,7 @@ spring:
                         refreshTokenValiditySeconds: 600
                     dev:
                         client-id: dev
-                        client-secret: '{bcrypt}$2a$10$tMSDLeQjFehV8Z1BxoU3quISNyLXXMDI8pdA3RKdwqv1ujuZ6AAQG'
+                        client-secret: '$2a$10$GQYx3uUeVnaUDi1HieBdrezItjh1IzZ5v87jbLg3IMs6OWZ6JtE5u'
                         scope: select
                         authorization-grant-type: client_credentials
                         accessTokenValiditySeconds: 600
