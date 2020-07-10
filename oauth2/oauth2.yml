@@ -7,14 +7,14 @@ spring:
                 registration:
                     test:
                         client-id: test
-                        client-secret: '{bcrypt}$2a$10$GQYx3uUeVnaUDi1HieBdrezItjh1IzZ5v87jbLg3IMs6OWZ6JtE5u'
+                        client-secret: '{bcrypt}$2a$10$3AERFonhGzRIh2qMv/jtL.S38so5sxzdsAhyzqMtSLgoNZGiQL3Im'
                         scope: select
                         authorization-grant-type: password,refresh_token,client_credentials,authorization_code
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
                     dev:
                         client-id: dev
-                        client-secret: '{bcrypt}$2a$10$GQYx3uUeVnaUDi1HieBdrezItjh1IzZ5v87jbLg3IMs6OWZ6JtE5u'
+                        client-secret: '{bcrypt}$2a$10$3AERFonhGzRIh2qMv/jtL.S38so5sxzdsAhyzqMtSLgoNZGiQL3Im'
                         scope: select
                         authorization-grant-type: client_credentials
                         accessTokenValiditySeconds: 600
