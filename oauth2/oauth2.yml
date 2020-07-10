@@ -9,14 +9,16 @@ spring:
                         client-id: test
                         client-secret: '{bcrypt}$2a$10$3AERFonhGzRIh2qMv/jtL.S38so5sxzdsAhyzqMtSLgoNZGiQL3Im'
                         scope: select
-                        authorization-grant-type: password,refresh_token,client_credentials,authorization_code
+                        authorizationGrantType: password,refresh_token,client_credentials,authorization_code
+                        authoritie: [oauth2]
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
                     dev:
                         client-id: dev
                         client-secret: '{bcrypt}$2a$10$3AERFonhGzRIh2qMv/jtL.S38so5sxzdsAhyzqMtSLgoNZGiQL3Im'
                         scope: select
-                        authorization-grant-type: client_credentials
+                        authorizationGrantType: client_credentials
+                        authoritie: [oauth2]
                         accessTokenValiditySeconds: 600
                         refreshTokenValiditySeconds: 600
 
