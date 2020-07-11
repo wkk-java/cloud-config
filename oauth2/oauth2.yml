@@ -1,10 +1,9 @@
----
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://${mysqlserver:jr-server}:3306/oauth?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${mysqlserver:jr-server}:3306/sys?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai
 mybatis:
   # 指定实体类包路径	
   typeAliasesPackage: com.wk.*.model
@@ -14,8 +13,7 @@ mybatis:
   #configuration:
     #进行自动映射时，数据以下划线命名，如数据库返回的"order_address"命名字段是否映射为class的"orderAddress"字段。默认为false
     #map-underscore-to-camel-case: true
-....
----
+
 hystrix:
   command:
     default:
@@ -26,4 +24,3 @@ hystrix:
 ribbon:
   ConnectTimeout: 10000 # ribbon链接超时时长
   ReadTimeout: 10000 # ribbon读取超时时间长
-...
