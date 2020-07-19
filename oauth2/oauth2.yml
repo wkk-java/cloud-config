@@ -4,6 +4,9 @@ spring:
     username: root
     password: root
     jdbc-url: jdbc:mysql://${mysqlserver:jr-server}:3306/oauth?characterEncoding=utf-8&useSSL=false&useUnicode=true&serverTimezone=Asia/Shanghai
+  scurity:
+    oauth:
+      sysResourceIds: user
 mybatis:
   # 指定实体类包路径	
   typeAliasesPackage: com.wk.*.model
