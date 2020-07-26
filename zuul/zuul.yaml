@@ -1,14 +1,12 @@
 zuul:
     # 过滤service服务
     #ignoredServices: '*-server-*'
-    stripPrefix: true
     ignoredPatterns:
         /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
     routes:
         path: /${URL_SERVER_NAME}/sys/**
         sensitiveHeaders:
         serviceId: sys
-        stripPrefix: true
     sensitive-headers: Cookie,Set-Cookie
     upload:
         multipart:
