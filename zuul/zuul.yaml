@@ -8,6 +8,10 @@ zuul:
             path: /sys/**
             sensitiveHeaders:
             serviceId: sys
+        oauth:
+            path: /oauth2/**
+            sensitiveHeaders:
+            serviceId: oauth2
     sensitive-headers: Cookie,Set-Cookie
     upload:
         multipart:
