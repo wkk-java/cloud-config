@@ -11,11 +11,11 @@ zuul:
         /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
     routes:
         sys:
-            path: /sys1/**
+            path: /sys12/**
             sensitiveHeaders:
             serviceId: sys
         oauth:
-            path: /oauth/**
+            path: /oauth12/**
             sensitiveHeaders:
             serviceId: oauth2
     sensitive-headers: Cookie,Set-Cookie
