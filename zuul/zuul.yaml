@@ -9,7 +9,7 @@ zuul:
             sensitiveHeaders:
             serviceId: sys
         oauth:
-            path: /oauth2/**
+            path: /oauth/**
             sensitiveHeaders:
             serviceId: oauth2
     sensitive-headers: Cookie,Set-Cookie
