@@ -2,7 +2,7 @@ spring:
     application:
         author:
             address: shanghai
-        name: zuul-1
+        name: zuul
 
 zuul:
     # 过滤service服务
@@ -11,11 +11,11 @@ zuul:
         /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
     routes:
         sys:
-            path: /sys12/**
+            path: /sys/**
             sensitiveHeaders:
             serviceId: sys
         oauth:
-            path: /oauth12/**
+            path: /oauth/**
             sensitiveHeaders:
             serviceId: oauth2
     sensitive-headers: Cookie,Set-Cookie
