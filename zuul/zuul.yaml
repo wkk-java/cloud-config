@@ -2,7 +2,6 @@ spring:
     application:
         author:
             address: shanghai
-        name: zuul
 
 zuul:
     # 过滤service服务
