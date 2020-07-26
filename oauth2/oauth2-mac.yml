@@ -1,1 +1,4 @@
-
+spring:
+  scurity:
+    oauth:
+      registResourceIds: sys,product,app,order
