@@ -1,6 +1,7 @@
 zuul:
     # 过滤service服务
     #ignoredServices: '*-server-*'
+    stripPrefix: true
     ignoredPatterns:
         /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
     routes:
