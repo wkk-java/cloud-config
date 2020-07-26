@@ -1,3 +1,9 @@
+spring:
+    application:
+        author:
+            address: shanghai
+        name: zuul-1
+
 zuul:
     # 过滤service服务
     #ignoredServices: '*-server-*'
