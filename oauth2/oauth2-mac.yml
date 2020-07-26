@@ -1,5 +1,1 @@
-spring:
-    application:
-        author:
-            address: shanghai
-        name: zuul
+
