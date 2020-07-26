@@ -4,9 +4,10 @@ zuul:
     ignoredPatterns:
         /**/auth/loadUserByUsername,/**/auth/loadUserByMobile
     routes:
-        path: /${URL_SERVER_NAME}/sys/**
-        sensitiveHeaders:
-        serviceId: sys
+        sys:
+            path: /${URL_SERVER_NAME}/sys/**
+            sensitiveHeaders:
+            serviceId: sys
     sensitive-headers: Cookie,Set-Cookie
     upload:
         multipart:
