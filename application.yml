@@ -1,7 +1,7 @@
 application:
   author:
     names: james yoyo
-    address: ShangHai city
+    address: HuBei province WuHan City
     email: 103xxxxx@qq.com
   date: 2019/07
 spring:
@@ -52,7 +52,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${eureka_server:http://admin:${SECURITY_USER_PASSWORD}@jr-server:2002/eureka/,http://admin:${SECURITY_USER_PASSWORD}@lj-server:2003/eureka/}
+      defaultZone: ${eureka_server:http://admin:${SECURITY_USER_PASSWORD}@jr-server:2002/eureka/}
 
 
 # 开启Feign对Hystrix的支持
